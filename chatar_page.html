@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="title">Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+	<button id="logout" class="glyphicon glyphicon-log-out" style="background-image: radial-gradient( circle farthest-corner at 5.7% 50%,  rgba(218,132,247,0.71) 29.5%, rgba(248,193,119,0.8) 90.5% );" onclick="logout();">LOGOUT</button>
+	<button id="logout" class="glyphicon glyphicon-move" style="background-image: radial-gradient( circle farthest-corner at 11.7% 80.6%,  rgba(249,185,255,1) 0%, rgba(177,172,255,1) 49.3%, rgba(98,203,255,1) 89% );" onclick="main()">MAIN SCREEN</button>
+	<center>
+		<h1 class="header">	
+			CHATAR PATAR
+			<sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<div style="text-align: left;margin-bottom: 70px;" id="output"> </div>
+	</center>
+</div>
+
+<center>
+	<div class="input_div_message_page">
+		<label>Send:</label>
+		<input id="msg" placeholder="MESSAGE" class="form-control" type="text">
+		<button class="btn btn-success" onclick="send()">Send</button>
+	</div>
+</center>
+
+<script src="chatar_page.js"></script>
+</body>
+</html>
